@@ -1,0 +1,123 @@
+
+
+// import React, { Component } from 'react';
+// import { StyleSheet, SafeAreaView, FlatList, View } from 'react-native';
+// import { Text,Divider  } from 'react-native-elements';
+// import MainHeader from '../Components/MainHeader';
+// import { normalize } from '../Config/AppConfig';
+
+// const DATA = [
+// 	{
+// 		id: '1',
+// 		title: 'Camp 2',
+// 		send_sms: '11111111',
+// 		failed_sms: '1'
+// 	},
+// 	{
+// 		id: '2',
+// 		title: 'Camp 2',
+// 		send_sms: '22222',
+// 		failed_sms: '2'
+// 	},
+// 	{
+// 		id: '3',
+// 		title: 'Camp 3',
+// 		send_sms: '333333',
+// 		failed_sms: '3'
+//   },
+//   {
+// 		id: '4',
+// 		title: 'Camp 3',
+// 		send_sms: '333333',
+// 		failed_sms: '3'
+//   },
+//   {
+// 		id: '5',
+// 		title: 'Camp 3',
+// 		send_sms: '333333',
+// 		failed_sms: '3'
+// 	},{
+// 		id: '6',
+// 		title: 'Camp 3',
+// 		send_sms: '333333',
+// 		failed_sms: '3'
+// 	}
+// ];
+
+// function Item({ title, send_sms, failed_sms }) {
+// 	return (
+// 		<View style={styles.item}>
+//       <Divider style={{ backgroundColor: '#A9A9A9', marginTop:1, height:1 }}></Divider>
+// 			<Text style={styles.title}>{title}</Text>
+
+// 			<View style={{ ...styles.mainContainer }}>
+// 				<View style={{ ...styles.camps}}>
+// 					<Text style={{ fontSize: normalize(20), fontWeight: '500' }}>2245</Text>
+// 					<Text style={{ fontSize: normalize(10) }}>TOTAL SMS DELIVERED</Text>
+// 				</View>
+// 				<View style={{...styles.camps,backgroundColor:'#092d7b',borderRadius:0,borderTopRightRadius:10,borderBottomRightRadius:10 }}>
+// 					<Text style={{ fontSize: normalize(20), fontWeight: '500',color:'white' }}>123</Text>
+// 					<Text style={{ fontSize: normalize(10),color:'white' }}>SMS FAILED</Text>
+// 				</View>
+// 			</View>
+
+// 		</View>
+// 	);
+// }
+
+// class Reports extends Component {
+// 	state = {};
+
+// 	componentDidMount() {
+// 		// StatusBar.setBarStyle("light-content");
+// 	}
+
+// 	render() {
+// 		return (
+// 			<SafeAreaView style={{ flex: 1, backgroundColor: '#eeeeee' }}>
+// 				<MainHeader title={'Reports'} />
+// 				<Text h4 style={styles.item}>Hi, Ninad</Text>
+// 				<FlatList
+// 					data={DATA}
+// 					renderItem={({ item }) => (
+// 						<Item title={item.title} send_sms={item.send_sms} failed_sms={item.failed_sms} />
+// 					)}
+// 					keyExtractor={(item) => item.id}
+// 				/>
+// 			</SafeAreaView>
+// 		);
+// 	}
+// }
+
+// const styles = StyleSheet.create({
+// 	item: {
+// 		padding: 0,
+// 		marginVertical: 8,
+// 		marginHorizontal: 30
+// 	},
+// 	title: {
+// 		fontSize: 16
+// 	},
+// 	mainContainer: {
+// 		flex: 1,
+// 		flexDirection: 'row',
+//     marginTop: 20,
+//     borderRadius:10,
+// 		backgroundColor: 'white',
+// 		elevation: 3
+// 	},
+// 	content: {
+// 		borderTopLeftRadius: 10,
+// 		borderBottomLeftRadius: 10
+// 		// flexDirection:'column',
+// 		// justifyContent:'center'
+//   },
+//   camps:{
+//     width: '50%',
+//     backgroundColor:'white',
+//     padding:15,
+//     borderRadius:10
+//   }
+// });
+
+// export default Reports;
